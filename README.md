@@ -4,31 +4,56 @@ Welcome to the Word Info API, a service that provides information about words in
 
 ## Technologies Used
 
-- **Flask:** A lightweight web application framework for Python.
-- **AWS Lambda:** Serverless computing platform for running the Word Info function.
-- **AWS API Gateway:** Used to expose the Word Info function as an HTTP API.
+- **Flask:** A lightweight web application framework for Python
+- **AWS Lambda:** Serverless computing platform for running the Word Info function
+- **AWS API Gateway:** Used to expose the Word Info function as an HTTP API
 
 ## Base URL
 The base URL for the API is:
-https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/word-info/
+https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/
 
 ## Endpoint
 ### POST /word-info ###
 Analyze a text and retrieve word information.
 
 #### Request ####
-- **Method:** POST.
-- **URL:** /word-info.
-- **Content-Type:** application/json.
+- **Method:** POST
+- **URL:** /word-info
+- **Content-Type:** application/json
 
 #### Request Body ####
 The request body should be a JSON object with a single field:
-- **text** (string, required): The text to be analyzed.
+- **text** (string, required): The text to be analyzed
   
 Example:
 {
   "text": "This is a sample text for analysis."
 }
+
+#### Success Response ####
+- **Status Code:** 200 OK
+- **Content-Type:** application/json
+
+The successful response includes information about the words in the text. For Example:
+
+- {
+  "num_words": 7,
+  "longest_word": "analysis",
+  "smallest_word": "a",
+  "average_word_length": 6.142857142857143,
+  "unique_words": ["this", "is", "a", "sample", "text", "for", "analysis"],
+  "word_frequency": {
+    "this": 1,
+    "is": 1,
+    "a": 1,
+    "sample": 1,
+    "text": 1,
+    "for": 1,
+    "analysis": 1
+  }
+}
+
+
 
 
 ## Author
