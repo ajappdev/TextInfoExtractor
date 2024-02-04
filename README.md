@@ -12,7 +12,7 @@ Welcome to the Word Info API, a service that provides information about words in
 The base URL for the API is:
 https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/
 
-## Endpoint
+## Endpoint ##
 ### POST /word-info ###
 Analyze a text and retrieve word information.
 
@@ -73,7 +73,14 @@ response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
-## Author
+## Notes ##
+- This API performs a basic analysis and may not handle all edge cases.
+- Ensure that the input text is within the supported length limits.
+
+## Conclusion ##
+Thank you for using the TextInfoExtractor API! If you have any questions or issues, please contact alae1ajbar@gmail.com
+
+## Author ##
 AJBAR ALAE
 alae1ajbar@gmail.com
 2024-02-03
