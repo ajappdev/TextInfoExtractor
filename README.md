@@ -26,17 +26,19 @@ The request body should be a JSON object with a single field:
 - **text** (string, required): The text to be analyzed
   
 Example:
+```
 {
   "text": "This is a sample text for analysis."
 }
+```
 
 #### Success Response ####
 - **Status Code:** 200 OK
 - **Content-Type:** application/json
 
 The successful response includes information about the words in the text. For Example:
-
-- {
+```
+{
   "num_words": 7,
   "longest_word": "analysis",
   "smallest_word": "a",
@@ -52,7 +54,7 @@ The successful response includes information about the words in the text. For Ex
     "analysis": 1
   }
 }
-
+```
 
 
 
