@@ -55,8 +55,23 @@ The successful response includes information about the words in the text. For Ex
   }
 }
 ```
+#### Example Usage ####
+**cURL**
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"text": "This is a sample text for analysis."}' https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/word-info
+```
 
+**Python**
+```python
+import requests
 
+url = "https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/word-info"
+data = {"text": "This is a sample text for analysis."}
+headers = {"Content-Type": "application/json"}
+
+response = requests.post(url, json=data, headers=headers)
+print(response.json())
+```
 
 ## Author
 AJBAR ALAE
