@@ -17,11 +17,11 @@ https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/word-info/
 Analyze a text and retrieve word information.
 
 #### Request ####
-Method: POST.
-URL: /word-info.
-Content-Type: application/json.
+- **Method:** POST.
+- **URL:** /word-info.
+- **Content-Type:** application/json.
 
-**Request Body**
+#### Request Body ####
 The request body should be a JSON object with a single field:
 - **text** (string, required): The text to be analyzed.
   
