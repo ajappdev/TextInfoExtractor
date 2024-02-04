@@ -13,10 +13,10 @@ The base URL for the API is:
 https://2uxaqebw5j.execute-api.us-east-1.amazonaws.com/diverge/word-info/
 
 ## Endpoint
-### POST /word-info
+### POST /word-info ###
 Analyze a text and retrieve word information.
 
-**Request**
+#### Request ####
 Method: POST.
 URL: /word-info.
 Content-Type: application/json.
