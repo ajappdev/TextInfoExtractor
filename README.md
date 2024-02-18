@@ -83,4 +83,4 @@ Thank you for using the TextInfoExtractor API! If you have any questions or issu
 ## Author ##
 AJBAR ALAE
 alae1ajbar@gmail.com
-2024-02-03
+2024-01-25
